@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<title>FasterUX</title>
+
+	<meta charset="UTF-8" />
+	<link rel='canonical' href='index.html' />
+
+	<meta name="keywords" content="FasterUX, Web Performance Optimization">
+	<meta name="description" content="Get your UX deliver fast. Web Performance Optimization.">
+
+	<meta name="viewport" content="width=1024">
+
+	<style>
+		@font-face {
+			font-family: "chunkfive";
+			src: url("../styles/fonts/ChunkFive/Chunkfive.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: "raleway_regular";
+			src: url("../styles/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+
+@charset "UTF-8";
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #ffffff;
+  color: #222;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  min-width: 1024px;
+  background: #ffffff; }
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: #222; }
+
+/* =============================================================================
+ * Links
+ * ========================================================================== */
+a {
+  color: #00e; }
+  a:visited {
+    color: #551a8b; }
+  a:hover {
+    color: #06e; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+a {
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  -ms-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+  text-decoration: none; }
+
+/* =============================================================================
+ * Typography
+ * ========================================================================== */
+b, strong {
+  font-weight: bold; }
+
+/* =============================================================================
+ * Lists
+ * ========================================================================== */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+/* =============================================================================
+ * Embedded content
+ * ========================================================================== */
+/* 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+/* Correct overflow not hidden in IE9
+ */
+/* =============================================================================
+ * Figures
+ * ========================================================================== */
+figure {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  /*text-transform: uppercase;*/
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px; }
+
+h2.black, h3.black, p.black {
+  color: #000000; }
+h1.grey, h2.grey, h3.grey, p.grey {
+  color: #f2f2f2; }
+h1 {
+  font-size: 32px;
+  font-family: "novecento_wide_bookbold";
+  line-height: 30px;
+  letter-spacing: -2px; }
+
+h2 {
+  font-size: 48px;
+  font-family: "novecento_wide_bookbold";
+  line-height: 46px;
+  letter-spacing: -2px; }
+h3 {
+  font-size: 24px;
+  font-family: "novecento_widebook";
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 25px; }
+  h3.sub {
+    margin-top: 4px; }
+
+
+p {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em; }
+  p.intro {
+    width: 540px; }
+  p.intro a {
+      color: #00b3e6; }
+  p.intro a:hover {
+        color: #808080; }
+
+img {
+  vertical-align: middle; }
+
+.center {
+  position: relative;
+  width: 984px;
+  margin: auto;
+  padding: 0 20px 0 20px; }
+
+.pageWrap {
+  min-height: 100%;
+  margin-bottom: -160px; }
+
+.bg {
+  padding: 80px 0;
+  position: relative; }
+  .bg.red {
+    background: #d40000;
+    color: #f2f2f2;
+    padding-bottom: 60px; }
+  .bg.dark {
+    background: #272727;
+    color: #f2f2f2;
+    padding-bottom: 60px; }
+    .bg.dark.largePaddingBottom {
+      padding-bottom: 80px; }
+
+  .bg.lightgrey {
+    background: #f2f2f2;
+    color: #000000; }
+
+canvas {
+  position: absolute; }
+
+svg {
+  overflow: visible !important;
+  height: 100%;
+  width: 100%; }
+
+	</style>
+
+	<!--<link rel="stylesheet" href="../styles/css/fonts_20.css">
+	<link rel="stylesheet" href="../styles/css/main.css"/>-->
+
+	<style>
+		
+		body {
+			font-size: 1.2em;
+			font-family: "raleway_regular";
+		}
+		
+		h1 {
+			font-family: "raleway_regular";
+			font-size: 5em;
+			letter-spacing: 0;
+			line-height: 1.6em;
+			text-indent: -0.08em;
+		}
+		
+		h2 {
+			font-family: "chunkfive";
+			letter-spacing: 1px;
+			font-size: 48px;
+			line-height: 60px; 
+		}
+
+		h3 {
+			font-family: "raleway_regular";
+			text-transform: uppercase;
+		}
+
+		.redText { color: #d40000 }
+
+		.bg.dark.exception {
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="pageWrap">
+
+	<div class="bg dark largePaddingBottom">
+		<div class="center">
+			<h1 class="grey">FASTER<span class="redText">UX</span>.</h2>
+			<h2 class="grey">Web Performance Optimization.</h2>
+			<h3 class="grey sub">Get your UX deliver fast.</h3>
+			
+			<p class="grey intro">
+			Schneller Seitenaubau. 
+			</p>
+			<p class="grey intro">
+			Mehr Pageviews, mehr Visits. 
+			</p>
+			<p class="grey intro">
+			Höhere Conversion Rate. 
+			</p>
+			<p class="grey intro">
+			Bessere Suchmaschinen-Platzierungen. 
+			</p>
+			<p class="grey intro">
+			Zufriedene Nutzer. 
+			</p>
+
+		</div>
+	  </div>
+
+	  <div class="bg white">
+		<div class="center">
+			<h2 class="black">Don't be SLOW.</h2>
+			<h3 class="black sub">Or your customer won't find you any more.</h3>
+			
+			<p class="black intro">
+			Lassen sie sich nicht auf den SLOW-Index setzen.<br>
+			Machen Sie Ihre Website jetzt schneller und profitieren Sie<br>
+			von besseren Suchmaschinen-Platzierungen.
+			</p>
+		</div>
+	  </div>
+
+	  <div class="bg red">
+		<div class="center">
+			<h2 class="grey">UX in 1000 ms</h2>
+			<h3 class="grey sub">How fast is fast enough?</h3>
+			
+			<p class="grey intro">
+			Ihre Website sollte in ca. 1 Sekunde die wichtigsten Inhalte anzeigen können.
+			</p>
+
+			<p class="grey intro">
+			Mit unserem testbasierten Verfahren zeigen wir Ihnen ganz konkret, was Ihre Website aktuell langsam macht und mit welchen Maßnahmen Sie den Turbo einschalten.
+			</p>
+
+			<p class="grey intro">
+			Measure first. Then Optimize. Measure Again. Go on like this ...
+			</p>
+
+		</div>
+	  </div>
+
+
+	  <div class="bg lightgrey exception">
+		<div class="center">
+			<h2 class="grey">&nbsp;</h2>
+		</div>
+	  </div>
+
+
+	  <div class="bg dark exception">
+		<div class="center">
+			<p class="grey intro">
+			FASTER<span class="redText">UX</span> ist ein Service von 
+			</p>
+			<h2 class="grey">Sven Deginther</h2>
+			<h3 class="grey sub">UX und Web Performance Berater</h3>
+			
+			<p class="grey intro">
+			Otto-Ostrowski-Str. 27<br>
+			10249 Berlin
+			</p>
+			<p class="grey intro">
+			<!--<a href="#">fasterux@gmail.com</a> -->
+			</p>
+
+		</div>
+	  </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
